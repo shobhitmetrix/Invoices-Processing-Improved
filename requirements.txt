@@ -1,0 +1,23 @@
+# Shared / invoice extraction (Test Run/run_test_set_gemini.py)
+openai>=1.109.0
+pydantic>=2.0
+python-dotenv>=1.0
+
+# Document orientation (fix_image_orientation.py)
+# Use NumPy 1.x on Windows — NumPy 2.x can break PaddlePaddle / paddleocr.
+numpy>=1.24,<2.0
+opencv-python>=4.8
+paddleocr>=3.0
+
+# Download pipeline (Test Run/step1_download_invoice.py)
+pandas>=2.0
+requests>=2.28
+Pillow>=10.0
+ImageHash>=4.3
+pdf2image>=1.16
+
+# Optional: eval / Excel elsewhere in this project
+openpyxl>=3.0
+
+# System (not installed via pip):
+# - Poppler: required by pdf2image for PDF→JPEG (see POPPLER_PATH in step1_download_invoice.py)
